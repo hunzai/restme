@@ -15,7 +15,7 @@ public class JsonProcessorTests {
 	
 	@Test
 	public void testTree(){
-		processor.addAttribute();
+		processor.addTestJsonElement("jsons/test_case.json");
 	}
 	
 	
