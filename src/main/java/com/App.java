@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.util.List;
 import java.util.logging.Logger;
 
+import com.MyRester;
 import com.google.gson.stream.JsonReader;
 import com.testcase.*;
 
@@ -16,7 +17,9 @@ public class App {
 		String testsFolderPath = "jsons";
 		List<TestCase> tests = manager.getTestCases(testsFolderPath);
 		for (TestCase testCase : tests) {
-			MyRester.getActualResponse(testCase.getRequest());	
+			MyRester
+			.getActualResponse(testCase.getRequest());	
+			
 		}	
 	}
 

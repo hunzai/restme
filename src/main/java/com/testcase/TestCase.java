@@ -1,7 +1,7 @@
 package com.testcase;
 
 public class TestCase {
-	private String testrailsid;
+	private String testrailid;
 	private String name;
 	private String description;
 
@@ -12,8 +12,8 @@ public class TestCase {
 		return response;
 	}
 
-	public String getTestrailsid() {
-		return testrailsid;
+	public String getTestrailid() {
+		return testrailid;
 	}
 
 	public String getName() {

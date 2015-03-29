@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="119" started-at="2015-03-27T20:15:54Z" finished-at="2015-03-27T20:15:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="119" started-at="2015-03-27T20:15:54Z" finished-at="2015-03-27T20:15:54Z">
+      <class name="test.JsonProcessorTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.JsonProcessorTests@77a172dc]" name="setup" is-config="true" duration-ms="8" started-at="2015-03-27T21:15:54Z" finished-at="2015-03-27T21:15:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testTree()[pri:0, instance:test.JsonProcessorTests@77a172dc]" name="testTree" duration-ms="101" started-at="2015-03-27T21:15:54Z" finished-at="2015-03-27T21:15:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTree -->
+      </class> <!-- test.JsonProcessorTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,16 +1,17 @@
 package com.testcase;
 
-import com.fasterxml.jackson.databind.JsonNode;
+
+import com.google.gson.JsonObject;
 
 public class Response {
 	private String status;
-	private JsonNode content;
+	private JsonObject content;
 	
 	public String getStatus() {
 		return status;
 	}
 	
-	public JsonNode getContent() {
+	public JsonObject getContent() {
 		return content;
 	}
 
