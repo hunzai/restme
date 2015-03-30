@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="331" started-at="2015-03-29T21:15:06Z" finished-at="2015-03-29T21:15:06Z">
+  <suite name="Default suite" duration-ms="195" started-at="2015-03-30T16:12:11Z" finished-at="2015-03-30T16:12:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="331" started-at="2015-03-29T21:15:06Z" finished-at="2015-03-29T21:15:06Z">
+    <test name="Default test" duration-ms="195" started-at="2015-03-30T16:12:11Z" finished-at="2015-03-30T16:12:11Z">
       <class name="test.JsonProcessorTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.JsonProcessorTests@56aeecff]" name="setup" is-config="true" duration-ms="14" started-at="2015-03-29T23:15:06Z" finished-at="2015-03-29T23:15:06Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.JsonProcessorTests@beafe7]" name="setup" is-config="true" duration-ms="8" started-at="2015-03-30T18:12:11Z" finished-at="2015-03-30T18:12:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testTree()[pri:0, instance:test.JsonProcessorTests@56aeecff]" name="testTree" duration-ms="299" started-at="2015-03-29T23:15:06Z" finished-at="2015-03-29T23:15:06Z">
+        <test-method status="PASS" signature="testTree()[pri:0, instance:test.JsonProcessorTests@beafe7]" name="testTree" duration-ms="178" started-at="2015-03-30T18:12:11Z" finished-at="2015-03-30T18:12:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTree -->
