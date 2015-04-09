@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.JsonProcessorTests">
+      <class name="test.processor.JsonProcessorTests">
         <methods>
-          <include name="testTree"/>
           <include name="setup"/>
+          <include name="testTree"/>
         </methods>
-      </class> <!-- test.JsonProcessorTests -->
+      </class> <!-- test.processor.JsonProcessorTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 public class TestManager {
@@ -27,6 +28,10 @@ public class TestManager {
 	public TestCase getTestCase(String jsonFile) {
 		String cotent = readFile(jsonFile);
 		return new Gson().fromJson(cotent, TestCase.class);
+	}
+	
+	public JsonObject getJsonObject(String json){
+		return new Gson().fromJson(json, JsonObject.class);
 	}
 
 	public String readFile(String path) {

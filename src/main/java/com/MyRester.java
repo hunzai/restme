@@ -8,11 +8,15 @@ import static org.hamcrest.Matchers.equalTo;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.Option;
+import com.jayway.jsonpath.spi.json.JsonProvider;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.filter.Filter;
 import com.jayway.restassured.filter.log.ResponseLoggingFilter;
@@ -48,6 +52,30 @@ public class MyRester {
 		}
 	}
 
+	public static void createAndWrite(String filename, String content){
+		try {
+			PrintWriter actualFile = new PrintWriter(filename);
+			actualFile.write(content);
+			actualFile.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static String generateContentCSV(String jsonContent){
+		long time = System.currentTimeMillis();
+		String csv = new String();
+		List<String> xpaths = MyRester.getXPaths(jsonContent);
+		for (String xpath : xpaths) {
+			String data = MyRester.getElement(jsonContent, xpath ).toString();
+			if(!(data.startsWith("{") || data.startsWith("[")) || data.isEmpty()){
+				csv +="\n" + xpath + ";" + "\"" + data + "\"" + ";" + time;
+			}
+		}
+		return csv;
+	}
+	
 	public static RequestSpecification givenThat(String name) {
 		PrintStream requestStream = null;
 		PrintStream responseStream = null;
@@ -85,9 +113,11 @@ public class MyRester {
 	}
 
 	public static Object getElement(String json, String xpath){
+		
 		Object document = Configuration.defaultConfiguration().jsonProvider().parse(json);
 		return read(document, xpath);
 	}
+	
 
 	public static String getActualResponse(Request request) {
 		String method = request.getMethod();

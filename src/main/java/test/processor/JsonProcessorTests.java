@@ -1,4 +1,4 @@
-package test;
+package test.processor;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,8 +17,8 @@ public class JsonProcessorTests {
 	
 	@Test
 	public void testTree(){
-		Object id = processor.addTestJsonElement("jsons/test_case.json");
-		System.out.println(id);
+		Object content = processor.addTestDataToTestCaseContent("jsons/test_case.json");
+		System.out.println(content);
 	}
 	
 	

@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[http://uat-api.groupon.de/api/mobile/de/deals/write-up-name-e9d7ff89-24de-4897-b7e6-92ca0aac0ccc-1]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="195" started-at="2015-03-30T16:12:11Z" finished-at="2015-03-30T16:12:11Z">
+  <suite name="Default suite" duration-ms="1886" started-at="2015-04-09T16:04:42Z" finished-at="2015-04-09T16:04:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="195" started-at="2015-03-30T16:12:11Z" finished-at="2015-03-30T16:12:11Z">
-      <class name="test.JsonProcessorTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.JsonProcessorTests@beafe7]" name="setup" is-config="true" duration-ms="8" started-at="2015-03-30T18:12:11Z" finished-at="2015-03-30T18:12:11Z">
+    <test name="Default test" duration-ms="1886" started-at="2015-04-09T16:04:42Z" finished-at="2015-04-09T16:04:43Z">
+      <class name="test.processor.JsonProcessorTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.processor.JsonProcessorTests@beafe7]" name="setup" is-config="true" duration-ms="9" started-at="2015-04-09T18:04:42Z" finished-at="2015-04-09T18:04:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testTree()[pri:0, instance:test.JsonProcessorTests@beafe7]" name="testTree" duration-ms="178" started-at="2015-03-30T18:12:11Z" finished-at="2015-03-30T18:12:11Z">
+        <test-method status="PASS" signature="testTree()[pri:0, instance:test.processor.JsonProcessorTests@beafe7]" name="testTree" duration-ms="1870" started-at="2015-04-09T18:04:42Z" finished-at="2015-04-09T18:04:43Z">
           <reporter-output>
+            <line>
+              <![CDATA[http://uat-api.groupon.de/api/mobile/de/deals/write-up-name-e9d7ff89-24de-4897-b7e6-92ca0aac0ccc-1]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testTree -->
-      </class> <!-- test.JsonProcessorTests -->
+      </class> <!-- test.processor.JsonProcessorTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
